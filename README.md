@@ -28,14 +28,15 @@ Technically, deep learning CNN models to train and test, each input image will p
 (Kernals), Pooling, fully connected layers (FC) and apply Softmax function to classify an object with probabilistic values between 0 and
 1. The below figure is a complete flow of CNN to process an input image and classifies the objects based on values.
 
-![Image]
+![Image](/Image/LeNet.png)
 
 ## Convolution Layer
 Convolution is the first layer to extract features from an input image. Convolution preserves the relationship between pixels by learning
 image features using small squares of input data. It is a mathematical operation that takes two inputs such as image matrix and a filter
 or kernal
 Consider a 5 x 5 whose image pixel values are 0, 1 and filter matrix 3 x 3 as shown in below
-![Image]
+
+![Conv](/Images/1_MrGSULUtkXc0Ou07QouV8A.gif)
 
  After sliding the filter over all the locations, you will find out that what you’re left with an array of numbers, which
  we call an activation map or feature map.
@@ -56,14 +57,20 @@ Consider a 5 x 5 whose image pixel values are 0, 1 and filter matrix 3 x 3 as sh
  output array(output from convolution layer) and perform operation on every step.
  Operations : Max, Average, Sum
  Example of max pooling..
- ![Image]
+ 
+ ![Pooling](/Images/1_SmiydxM5lbTjoKWYPiuzWQ.png)
  
  ## Fully connected layer
+ 
+ ![Fully](/Images/1_Mw6LKUG8AWQhG73H1caT8w.png)
+ 
  Fully connected layer is final layer of CNN. 
  Output from the pooling layer is 2d array but fully connected layer expects input in the form of 1d array.
  So, first 2d array must be converted to 1d array by flattening it.
  Now, 1d array is passed to fully connected layer and this layer will output array of probability for every class.
  We select the class with highest probability.
  
- ![Image]
+ # CNN 
+ 
+ ![Final](/Images/1_4GLv7_4BbKXnpc6BRb0Aew.png)
  
